@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+*::selection{
+ background-color: #597c61;
+ color: #000000;
+}
+
+
+.con1{
+    width: 100%;
+
+
+}
+
+body{
+        background-color: #111111;
+
+}
+/* ---------- header ------------*/
+.header{
+    padding: 10px 10px 0 10px;
+    color: #ffffff;
+    display: flex;    
+    justify-content: space-around;    
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #92929241;
+    top: 10px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    position: fixed;
+    top: 3px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+    
+
+}
+ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s;
+
+}
+
+li a:hover{
+    color: #6db17c;
+}
+
+/* li a:visited{
+        color: #cf6666;
+} */
+
+
+/* ---------- logo ------------*/
+.ri-cactus-line{
+    color: #6db17c;
+    font-size: 25px;
+}
+.logo-type{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+
+
+
+.container1-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* ----------left ------------*/
+.left1{
+    width: 50%;
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:end;
+    align-items: center;
+
+}
+
+.left1 img{
+    margin-top: 10%;
+    width: 250px;
+    filter: drop-shadow(0 0 50px #6a8b69a9);
+
+}
+
+/* ---------- right ------------*/
+.right1{
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+
+/* ---------- text  ------------*/
+.text1{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+.text1 h1{
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text1 h1 span{
+    color: #65a865;
+}
+.text1 p{
+    color: grey;
+    padding-bottom: 10px;
+}
+
+/* ---------- buttons  ------------*/
+.btn1{
+    display: flex;
+
+}
+.btn1 button{
+    border: none;
+    margin-right: 10px;
+}
+.btn1-1{
+    background-color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+
+}
+.btn1-1:hover{
+    background-color: #558b60;
+    color: #fff;
+    border-radius: 0 25px 25px 25px;
+
+}
+
+
+.ri-arrow-right-fill{
+    transition: all 1s;
+    font-size: 22px;
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+    background-color: #65a865;
+    border-radius: 25px;
+    transition: transform 1s;
+
+}
+.btn1-1:hover .ri-arrow-right-fill{
+    background-color: #111111;
+    color: #fff;
+    transform: translateX(0) rotate(-40deg);
+}
+
+.btn1-2{
+    color: #ffffff;
+    text-decoration:line-through;
+    background-color: #111111;
+    transition: all 0.5s;
+
+}
+.btn1-2:hover{
+    text-decoration:none;
+    color: #65a865;
+}
+
+/* ===============anim1============== */
+.anim{
+    opacity: 0;
+    transform: translatey(50px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+
+    }
+}
+.btn1.anim{
+    animation-delay: 0.5s;
+
+}
+
+
+.anim-pic{
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+.left1.anim-pic{
+    animation-delay: 1.5s;
+
+}
+
+
+.anim-x{
+    opacity: 0;
+    transform: translateX(50px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+.text1.anim-x{
+    animation-delay: 1s;
+}
+
+
+/* ---------- cards  ------------*/
+.container2{
+    color: #fff;   
+    padding-top: 12%;   
+     display: flex; 
+    justify-content: start;
+    align-items: center;
+    padding-left: 12px;
+
+
+}
+.all-card{
+    width: 55%;
+      display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     right: 0;
+}
+.cards
+{
+    position: relative;
+    margin: 10% 5%;
+    width: 200px;
+    padding: 90px 85px ;
+    background:linear-gradient(#00000088 , #597c61);
+    border: 3px solid #2a4e33;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.cards img{
+    width: 200px;
+    position: absolute;
+    top: -90px;
+    transition: transform 1s;
+
+}
+.cards:nth-child(odd){
+    rotate: -5deg;
+}
+.cards:nth-child(even){
+    justify-self: flex-end;
+    rotate: 5deg;
+}
+ 
+.cards h2{
+    width: 100px;
+    position: absolute;
+    
+}
+.cards:hover img{
+    transform: translateY(-70px);
+}
+
+.text2{
+    width: 45%;
+    padding-left: 10px;
+}
+.text2 h2{
+    font-size: 40px;
+}
+.text2 p{
+    color: gray;
+}
+
+
+
+/* media */
+@media screen and (max-width: 500px) {
+   
+    .header{
+        font-size: 12px;
+        padding-bottom: 3px;
+        align-items: center;
+        
+    }
+    .container1-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards
+    {
+    transition: all 2.5s;
+    margin: 28% 5%;
+    padding: 55px 65px ;
+
+    }
+    .cards h2{
+        font-size: 15px;
+        bottom: 20px;
+    }
+    .cards img{
+        width: 100px;
+        top: -45px;
+    }
+
+    .cards:hover img{
+        transform: translateY(-30px);
+    }
+
+
+
+    .right1 , .left1{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .left1 img{
+        width: 34%;
+    }
+    .text1{
+        transition: all 2.5s;
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+    }
+    .text1 h1{ 
+        font-size: 150%;
+        color: #ffffff;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+      
+    }
+    .text1 h1 span{
+        text-align: center;
+        padding-left: 50px;
+        padding: 0;
+    }
+    .container2{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .text2{
+        width: 50%;
+        text-align: center;
+        padding: 0;        
+        padding-bottom: 60px;
+        transition: all 1.5s;
+
+    }
+    .text2 h2{
+        font-size: 20px;
+    }
+    .text2 p{
+        font-size: 12px;
+    }
+    .btn1{
+    transition: all 2.5s;
+    flex-direction: column;
+    }
+    .btn1 button{
+        margin-top: 10px;
+    }
+    .all-card{
+        width: 35%;
+    }
+   
+}
