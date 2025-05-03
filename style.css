@@ -316,8 +316,28 @@ li a:hover{
     color: gray;
 }
 
+footer div{
+    border-top: solid 2px #2a4e33;
+    padding: 5% 5%;
+    text-align: center;       
+     color: #2a4e33;
 
+    i{
+        font-size: 30px;
+        padding: 2% 1%;
+        
+    }
+    p{
+        margin-top: 2%;
+    }
+}
 
+footer div{
+    i:hover{
+        text-shadow: #374e3c 0 0 10px;
+        color: #91af97;
+    }
+}
 /* media */
 @media screen and (max-width: 500px) {
    
@@ -413,5 +433,14 @@ li a:hover{
     .all-card{
         width: 35%;
     }
-   
+    footer {
+       div{
+        i{
+        font-size: 21px;
+         }
+         p{
+            font-size: 15px;
+        }
+       }  
+    }
 }
